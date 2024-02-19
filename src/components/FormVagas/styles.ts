@@ -11,6 +11,11 @@ export const Form = styled.form`
   input {
     padding: 0 16px;
     outline-color: ${({ theme }) => theme.corPrincipal};
+    @media (max-width: 768px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   button {
@@ -22,5 +27,19 @@ export const Form = styled.form`
     color: ${({ theme }) => theme.corSecundaria};
     margin-left: 8px;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 32px;
+    }
+  }
+  & {
+    @media (max-width: 768px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 `
